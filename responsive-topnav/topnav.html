@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="responsivetopnav.css"/>
+</head>
+<body>
+	<nav>
+    <div class="row" id="main">
+  <div class="topnav" id="myTopnav">
+  <a class="hvr-overline-reveal">Home</a>
+  <a class="hvr-overline-reveal">Products</a>
+  <a class="hvr-overline-reveal">Offers</a>
+  <a class="hvr-overline-reveal">Careers</a>
+  <a class="hvr-overline-reveal">Reach Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+</nav>
+</body>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</html>
